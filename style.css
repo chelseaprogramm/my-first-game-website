@@ -1,0 +1,184 @@
+body{background-color: black; color: white;}
+body{background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("gamebackground.png")}
+body{background-repeat: no-repeat; background-position: center; background-size: cover}
+body{font-family: Oswald, Geneva, Tahoma, Verdana, sans-serif;}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: #76504B solid 3px;
+    border-radius: 10px;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(165, 42, 42, 0.2);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(180deg, rgba(11, 13, 18, 0.25) 0%, rgba(11, 13, 18, 0.65) 65%, #0B0D12 100%);
+    transition: 0.8s ease;
+}
+.alive {
+    color: red;
+}
+.time {
+    color: red;
+}
+.highlight {
+    color: darkred;
+}
+#advantages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: #76504B solid 3px;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    max-width: 800px;
+    margin-top: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(165, 42, 42, 0.2);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(180deg, rgba(11, 13, 18, 0.25) 0%, rgba(11, 13, 18, 0.65) 65%, #0B0D12 100%);
+    transition: 0.8s ease;
+}
+#advantages ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+#images img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+#Hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.blood {
+    color: darkred;
+}
+#Hero a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: dimgray solid 2px;
+    padding: 10px;
+    background: #292C30;
+    transition: 1s ease;
+    border-radius: 10px;
+}
+#Hero a:hover {
+    color: darkred;
+    transform: translateY(-4px) scale(0.96);
+}
+#Hero a:active {
+    transform: scale(0.92);
+}
+#links a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60px;
+    max-width: 60px;
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+}
+#links a:first-child {
+    border: #76504B solid 2px;
+    padding: 6px;
+    border-radius: 10px;
+    background: linear-gradient( 135deg, #0B0D12 0%, #24151A 35%, #61251F 65%, #C6532B 100%);
+    transition: 0.8s ease;
+}
+#links a:first-child:hover {
+    transform: scale(0.96);
+    box-shadow: darkred 0 0 15px;
+}
+#links a:nth-child(2) {
+    border: #76504B solid 2px;
+    padding: 6px;
+    border-radius: 10px;
+    background: linear-gradient( 135deg, #0B0D12 0%, #24151A 35%, #61251F 65%, #C6532B 100%);
+    transition: 0.8s ease;
+}
+#links a:nth-child(2):hover {
+    transform: scale(0.96);
+    box-shadow: darkred 0 0 15px;
+}
+#links a:first-child:active {
+    transform: scale(0.92);
+}
+#links a:nth-child(2):active {
+    transform: scale(0.92);
+}
+
+@media (max-width: 650px) {
+    #links a {
+        display: grid;
+    }
+    #about {
+        display: flex;
+    }
+    #images {
+        display: grid
+    }
+    .contacts  {
+        display: grid;
+    }
+}
+.contacts a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+.contacts a:first-child:hover {
+    color: darkred;
+}
+.contacts a:nth-child(2):hover {
+    color: darkred;
+}
+.contacts a:last-child:hover {
+    color: darkred;
+}
+
+#about:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+#advantages:hover {
+    transform: translateY(-4px) scale(1.02);
+}
